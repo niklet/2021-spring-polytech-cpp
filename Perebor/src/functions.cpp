@@ -1,7 +1,7 @@
 #include "functions.h"
 #include <cmath>
 
-int full_enumeration(int number, double maxWeight, double Weight[], double Cost[]) {
+double full_enumeration(int number, double maxWeight, double Weight[], double Cost[]) {
     double maxCost = 0;
     for (int nabor = 0; nabor < pow(2, number); nabor++) {
         double tmpWeight = 0;
